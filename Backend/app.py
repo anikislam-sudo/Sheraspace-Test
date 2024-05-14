@@ -6,3 +6,6 @@ app = Flask(__name__)
 def get_linkedin_form():
     linkedin_form_link = "https://www.linkedin.com/home"
     return jsonify({'linkedin_form_link': linkedin_form_link})
+
+if __name__ == '__main__':
+    app.run(debug=True)
