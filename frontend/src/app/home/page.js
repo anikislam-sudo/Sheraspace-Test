@@ -4,7 +4,7 @@ const Homepage = () => {
   const fetchLinkedinFormLink = async () => {
     console.log("Button clicked!");
     try {
-      const response = await fetch("http://localhost:5000/linkedin/form");
+      const response = await fetch("http://localhost:5000");
       const data = await response.json();
       const link = data.linkedin_form_link;
       console.log(link);
